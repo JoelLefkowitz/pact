@@ -1,0 +1,49 @@
+{
+  "root": true,
+  "extends": ["eslint:recommended", "prettier"],
+  "env": { "es6": true, "node": true },
+  "ignorePatterns": ["dist"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "extends": ["plugin:@typescript-eslint/strict-type-checked"],
+      "plugins": ["@typescript-eslint", "sort-imports-es6-autofix"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": 2020,
+        "project": ["tsconfig.eslint.json"],
+        "sourceType": "module"
+      },
+      "rules": {
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          {
+            "argsIgnorePattern": "^_",
+            "destructuredArrayIgnorePattern": "^_"
+          }
+        ],
+        "sort-imports-es6-autofix/sort-imports-es6": [
+          "warn",
+          {
+            "ignoreCase": false,
+            "ignoreMemberSort": false,
+            "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["**/__mocks__/**", "*.spec.ts"],
+      "rules": {
+        "@typescript-eslint/no-empty-function": "off"
+      }
+    },
+    {
+      "files": ["*.d.ts"],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off",
+        "init-declarations": "off"
+      }
+    }
+  ]
+}
