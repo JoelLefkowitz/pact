@@ -1,4 +1,4 @@
-# Pacts
+# Pacts
 
 Promise collection transformers.
 
