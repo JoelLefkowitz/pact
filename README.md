@@ -1,23 +1,23 @@
-# Pact
+# Pacts
 
 Promise collection transformers.
 
-![Review](https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/pact/review.yml)
-![Version](https://img.shields.io/npm/v/pact)
-![Downloads](https://img.shields.io/npm/dw/pact)
-![Size](https://img.shields.io/bundlephobia/min/pact)
+![Review](https://img.shields.io/github/actions/workflow/status/JoelLefkowitz/pacts/review.yml)
+![Version](https://img.shields.io/npm/v/pacts)
+![Downloads](https://img.shields.io/npm/dw/pacts)
+![Size](https://img.shields.io/bundlephobia/min/pacts)
 ![Quality](https://img.shields.io/codacy/grade/_)
 ![Coverage](https://img.shields.io/codacy/coverage/_)
 
 ## Installing
 
 ```bash
-npm install pact
+npm install pacts
 ```
 
 ## Documentation
 
-Documentation and more detailed examples are hosted on [Github Pages](https://joellefkowitz.github.io/pact).
+Documentation and more detailed examples are hosted on [Github Pages](https://joellefkowitz.github.io/pacts).
 
 ## Tooling
 
